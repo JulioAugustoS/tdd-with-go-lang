@@ -31,4 +31,11 @@ func TestHello(t *testing.T) {
 
 		verifyCorrectMessage(t, result, expected)
 	})
+
+	t.Run("in French", func(t *testing.T) {
+		result := Hello("Ellie", "French")
+		expected := "Bonjour, Ellie!"
+
+		verifyCorrectMessage(t, result, expected)
+	})
 }

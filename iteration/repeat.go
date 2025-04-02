@@ -2,7 +2,7 @@ package iteration
 
 func Repeat(character string, times int) string {
 	var repeated string 
-	for i := 0; i < times; i++ {
+	for range times {
 		repeated = repeated + character
 	}
 

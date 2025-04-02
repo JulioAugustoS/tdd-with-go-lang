@@ -3,7 +3,7 @@ package iteration
 func Repeat(character string, times int) string {
 	var repeated string 
 	for range times {
-		repeated = repeated + character
+		repeated += character
 	}
 
 	return repeated

@@ -4,13 +4,18 @@ import "fmt"
 
 const prefix = "Hello, "
 
-func Hello(name string) string {
-	if (name == "") {
+func Hello(name string, language string) string {
+	if name == "" {
 		name = "World"
 	}
+
+  if language == "Spanish" {
+		return "Hola, " + name + "!"
+	}
+	
 	return prefix + name + "!"
 }
 
 func main() {
-	fmt.Println(Hello("Chris"))
+	fmt.Println(Hello("Elodie", "Spanish"))
 }
